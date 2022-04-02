@@ -2,7 +2,7 @@
 # https://github.com/taoyds/spider/blob/master/process_sql.py
 
 
-from natsql2sql.natsql2sql import inference_sql,Args,natsql_version as n_version
+from NatSQL.natsql2sql.natsql2sql import inference_sql,Args,natsql_version as n_version
 import sqlite3
 import sys,os,copy
 from nltk import word_tokenize
