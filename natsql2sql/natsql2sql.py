@@ -1,6 +1,6 @@
-from natsql2sql.utils import *
+from NatSQL.natsql2sql.utils import *
 import copy
-from natsql2sql.preprocess.stemmer import MyStemmer
+from NatSQL.natsql2sql.preprocess.stemmer import MyStemmer
 
 SQL_TOP = 1 # top sql, based on 'except', 'intersect', 'union'
 SQL_SUB = 2 # sub sql, 

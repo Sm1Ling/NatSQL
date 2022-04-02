@@ -5,15 +5,15 @@ import copy
 import argparse
 from spacy.symbols import ORTH, LEMMA
 
-from natsql2sql.preprocess.question_repair import question_repair
-from natsql2sql.preprocess.sentence_analyse import db_correction,db_continue_correction,sentence_cut,reshap_token,sentence_dump,merge_noun_chunks,re_analyse_sentence,correct_121_pattern,correct_special_pattern,pattern_sentence_analyse,final_correct_special_pattern,easy_cut,two_setence_analyse,select_split,reset_uncontinue_type,pattern_generate_col,anaylse_punctuate,special_word_modify,combine_none_subquestion
-from natsql2sql.preprocess.TokenString import get_spacy_tokenizer,TokenString,SToken
-from natsql2sql.preprocess.table_match import return_table_name
-from natsql2sql.preprocess.Schema_Token import Schema_Token
-from natsql2sql.preprocess.sq import SubQuestion,QuestionSQL
-from natsql2sql.preprocess.utils import construct_select_data
-from natsql2sql.preprocess.db_match import datebase_match_tables,get_database_col
-from natsql2sql.preprocess.match import COUNTRYS_DICT
+from NatSQL.natsql2sql.preprocess.question_repair import question_repair
+from NatSQL.natsql2sql.preprocess.sentence_analyse import db_correction,db_continue_correction,sentence_cut,reshap_token,sentence_dump,merge_noun_chunks,re_analyse_sentence,correct_121_pattern,correct_special_pattern,pattern_sentence_analyse,final_correct_special_pattern,easy_cut,two_setence_analyse,select_split,reset_uncontinue_type,pattern_generate_col,anaylse_punctuate,special_word_modify,combine_none_subquestion
+from NatSQL.natsql2sql.preprocess.TokenString import get_spacy_tokenizer,TokenString,SToken
+from NatSQL.natsql2sql.preprocess.table_match import return_table_name
+from NatSQL.natsql2sql.preprocess.Schema_Token import Schema_Token
+from NatSQL.natsql2sql.preprocess.sq import SubQuestion,QuestionSQL
+from NatSQL.natsql2sql.preprocess.utils import construct_select_data
+from NatSQL.natsql2sql.preprocess.db_match import datebase_match_tables,get_database_col
+from NatSQL.natsql2sql.preprocess.match import COUNTRYS_DICT
 
 
 def special_replace(str_):

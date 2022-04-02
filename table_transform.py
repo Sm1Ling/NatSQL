@@ -1,9 +1,9 @@
 import os, copy, argparse, json, pickle
-from natsql2sql.preprocess.TokenString import get_spacy_tokenizer
-from natsql2sql.preprocess.match import STOP_WORDS
-from natsql2sql.preprocess.Schema_Token import Schema_Token
-from natsql2sql.preprocess.stemmer import MyStemmer
-from natsql2sql.preprocess.db_match import DBEngine
+from NatSQL.natsql2sql.preprocess.TokenString import get_spacy_tokenizer
+from NatSQL.natsql2sql.preprocess.match import STOP_WORDS
+from NatSQL.natsql2sql.preprocess.Schema_Token import Schema_Token
+from NatSQL.natsql2sql.preprocess.stemmer import MyStemmer
+from NatSQL.natsql2sql.preprocess.db_match import DBEngine
 
 
 AGG_OPS = ('none', 'max', 'min', 'count', 'sum', 'avg')

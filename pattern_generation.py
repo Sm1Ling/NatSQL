@@ -5,16 +5,16 @@ import copy,os
 from typing import Callable, Dict, List, Set
 import sqlite3
 import re
-from natsql2sql.preprocess.TokenString import get_spacy_tokenizer,SToken,TokenString
-from natsql2sql.preprocess.sq import SubQuestion,QuestionSQL
-from natsql2sql.preprocess.table_match import return_column_match
-from natsql2sql.preprocess.others_pattern import get_AWD_column
-from natsql2sql.preprocess.match import AGG_WORDS,AGG_OPS,STOP_WORDS, S_ADJ_WORD_DIRECTION, ABSOLUTELY_GRSM_DICT, ALL_JJS
-from natsql2sql.preprocess.col_match import of_for_structure_in_col,col_match_main
-from natsql2sql.preprocess.utils import look_for_table_idx, construct_select_data,is_there_sgrsm_and_gr_or_sm,sjjs_table,get_all_table_from_sq,get_all_col_from_sq,str_is_date
-from natsql2sql.preprocess.stemmer import MyStemmer
-from natsql2sql.preprocess.Schema_Token import Schema_Token
-from natsql2sql.preprocess.pattern_analyze import others_analyze,select_analyze
+from NatSQL.natsql2sql.preprocess.TokenString import get_spacy_tokenizer,SToken,TokenString
+from NatSQL.natsql2sql.preprocess.sq import SubQuestion,QuestionSQL
+from NatSQL.natsql2sql.preprocess.table_match import return_column_match
+from NatSQL.natsql2sql.preprocess.others_pattern import get_AWD_column
+from NatSQL.natsql2sql.preprocess.match import AGG_WORDS,AGG_OPS,STOP_WORDS, S_ADJ_WORD_DIRECTION, ABSOLUTELY_GRSM_DICT, ALL_JJS
+from NatSQL.natsql2sql.preprocess.col_match import of_for_structure_in_col,col_match_main
+from NatSQL.natsql2sql.preprocess.utils import look_for_table_idx, construct_select_data,is_there_sgrsm_and_gr_or_sm,sjjs_table,get_all_table_from_sq,get_all_col_from_sq,str_is_date
+from NatSQL.natsql2sql.preprocess.stemmer import MyStemmer
+from NatSQL.natsql2sql.preprocess.Schema_Token import Schema_Token
+from NatSQL.natsql2sql.preprocess.pattern_analyze import others_analyze,select_analyze
 
 
 

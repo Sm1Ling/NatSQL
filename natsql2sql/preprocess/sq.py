@@ -1,7 +1,7 @@
 import copy
-from natsql2sql.utils import ORDER_OPS,WHERE_OPS,AGG_OPS
-from natsql2sql.preprocess.utils import str_is_num
-from natsql2sql.preprocess.TokenString import SToken
+from NatSQL.natsql2sql.utils import ORDER_OPS,WHERE_OPS,AGG_OPS
+from NatSQL.natsql2sql.preprocess.utils import str_is_num
+from NatSQL.natsql2sql.preprocess.TokenString import SToken
 
 class QuestionSQL():
     def __init__(self,sql,_tokenizer,tokens=None):
